@@ -1,0 +1,7 @@
+{
+  "name": "@artl-forge/templates",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Templates for Artl Forge CLI",
+  "type": "module"
+}

@@ -1,0 +1,2 @@
+# This folder contains database seeders for populating test/dev data
+# Run seeders using sequelize-cli or a custom seeding script

@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Generated docs
+docs/.astro/
+docs/dist/
+
+# Private files
+COMMANDS.md
+.commands
+my-commands.md
+
+# pnpm
+pnpm-lock.yaml
+.pnpmfile.cjs
+.pnpm/
+
+# Yarn
+yarn.lock
+
+# npm
+package-lock.json
+
+# Misc
+nul
+undefined

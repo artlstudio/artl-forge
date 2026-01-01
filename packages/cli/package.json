@@ -1,0 +1,72 @@
+{
+  "name": "artl",
+  "version": "0.0.4",
+  "description": "Production-grade backend bootstrap CLI by Artl Studio",
+  "type": "module",
+  "bin": {
+    "artl": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsup && node -e \"require('fs').cpSync('../templates', './templates', {recursive: true})\"",
+    "dev": "tsup --watch",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --config vitest.integration.config.ts"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.2",
+    "fs-extra": "^11.3.0",
+    "ora": "^9.0.0"
+  },
+  "devDependencies": {
+    "@artl-forge/core": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.0",
+    "rimraf": "^6.1.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artlstudio/artl-forge.git",
+    "directory": "packages/cli"
+  },
+  "keywords": [
+    "cli",
+    "backend",
+    "bootstrap",
+    "fastify",
+    "express",
+    "prisma",
+    "typescript",
+    "generator"
+  ],
+  "author": "Artl Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artlstudio/artl-forge/issues"
+  },
+  "homepage": "https://github.com/artlstudio/artl-forge#readme"
+}

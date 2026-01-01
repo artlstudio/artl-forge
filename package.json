@@ -1,0 +1,55 @@
+{
+  "name": "artl-forge",
+  "version": "0.0.4",
+  "private": true,
+  "description": "Production-grade backend bootstrap CLI by Artl Studio",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "test": "pnpm -r test",
+    "test:integration": "pnpm -r test:integration",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean && rimraf node_modules",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.15.0",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.51.0",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artlstudio/artl-forge.git"
+  },
+  "keywords": [
+    "cli",
+    "backend",
+    "bootstrap",
+    "fastify",
+    "express",
+    "prisma",
+    "typescript",
+    "generator"
+  ],
+  "author": "Artl Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artlstudio/artl-forge/issues"
+  },
+  "homepage": "https://github.com/artlstudio/artl-forge#readme"
+}

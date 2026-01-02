@@ -5,7 +5,7 @@
 <h1 align="center">Artl Forge</h1>
 
 <p align="center">
-  <strong>Production-grade backend bootstrap CLI</strong>
+  <strong>Production-ready backend baseline generator</strong>
 </p>
 
 <p align="center">
@@ -24,6 +24,13 @@
   Create production-ready backend projects in seconds.<br/>
   Fastify or Express. TypeScript or JavaScript. Prisma or Sequelize.<br/>
   <strong>Your stack, your choice.</strong>
+</p>
+
+<p align="center">
+  <em>
+    “Production-ready” refers to operational defaults (logging, health checks, config validation, shutdown).<br/>
+    Application features like authentication and authorization are intentionally opt-in.
+  </em>
 </p>
 
 ---

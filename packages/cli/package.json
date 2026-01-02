@@ -1,6 +1,6 @@
 {
   "name": "artl",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Production-grade backend bootstrap CLI by Artl Studio",
   "type": "module",
   "bin": {

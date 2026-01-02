@@ -2,24 +2,26 @@
 
 ![Artl Studio](https://cdn.artlstatic.com/images/logo/artlstudio-short.png)
 
-**Production-grade backend bootstrap CLI by Artl Studio**
+**Production-ready backend baseline generator by Artl Studio**
 
 [![npm version](https://img.shields.io/npm/v/artl.svg?style=flat-square)](https://www.npmjs.com/package/artl)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/artlstudio/artl-forge/blob/main/LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org/)
 
-Create production-ready backend projects in seconds. Your stack, your choice.
+Create production-ready backend baselines in seconds. Your stack, your choice.  
+
+_Production-ready refers to operational defaults (logging, health checks, config validation, shutdown). Auth/authorization are intentionally opt-in._
 
 ## Quick Start
 
 ```bash
-# Interactive mode - guided setup
+# Recommended (always latest)
 npx artl init my-api
 
 # Non-interactive with defaults (Fastify + Prisma + PostgreSQL)
 npx artl init my-api --yes
 
-# Install globally for faster access
+# Optional: install globally
 npm install -g artl
 artl init my-api
 ```
